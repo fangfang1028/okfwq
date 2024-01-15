@@ -1,6 +1,6 @@
 FROM debian
 RUN apt update
-RUN DEBIAN_FRONTEND=noninteractive apt install wine qemu-kvm *zenhei* xz-utils dbus-x11 curl firefox gnome-system-monitor mate-system-monitor  git xfce4 xfce4-terminal tightvncserver wget neofetch screen vim -y
+RUN DEBIAN_FRONTEND=noninteractive apt install wine qemu-kvm *zenhei* xz-utils dbus-x11 curl firefox-esr gnome-system-monitor mate-system-monitor  git xfce4 xfce4-terminal tightvncserver wget   -y
 RUN tar -xvf v1.2.0.tar.gz
 RUN mkdir  /root/.vnc
 RUN echo 'qq859806951' | vncpasswd -f > /root/.vnc/passwd
